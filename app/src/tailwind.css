@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary: rgb(109, 40, 217);
+	--default-border-color: rgb(156, 163, 175);
+	--body-background: rgb(243, 244, 246);
+	--white-background: rgb(255, 255, 255);
+	--black-background: rgb(0, 0, 0);
+	--white-text: rgb(255, 255, 255);
+	--black-text: rgb(0, 0, 0);
+}
+body {
+	@apply bg-gray-100;
+}
+button:hover {
+	filter: brightness(80%);	
+}
+button:focus {
+	outline: none;
+}
+.login-img-wrapper {
+	height: calc(100vh - 60px);
+}
+.video-playing {
+	height: 36.850rem;
+	width: 89rem;
+}
+.video-player {
+	height: 86.5%;
+}
+.no-videos {
+	height: 34rem;
+}
+.recommended-videos {
+	height: 20.5rem;
+	overflow-y: scroll;
+}
+.video-comments {
+	height: 15.78rem;
+	overflow-y: scroll;
+}
